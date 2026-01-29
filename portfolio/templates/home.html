@@ -35,7 +35,6 @@
 </head>
 
 <body>
-
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -65,7 +64,8 @@
         </ul>
       </nav><!-- .nav-menu -->
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
@@ -252,7 +252,7 @@
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
               <h4>Python Developer</h4>
-              <h5>Sep 2023 - Present</h5>
+              <h5>Nov 2023 - Present</h5>
               <p><em>Code Icons Technology, Pune, India </em></p>
               <ul>
                 <li>Strong command over Python programming, with 2+ years of experience in developing efficient 
@@ -276,48 +276,52 @@
             <i class="fas fa-download"></i> Contact Me</a>
     </section><!-- End Resume Section -->
 
-    <div class="cover-letter container mt-5">
-      <!-- Cover letter content goes here -->
-      <div class="cover-letter container mt-5">
-        <div class="row">
-          <div class="col-md-3 text-center">
-            <img src="{% static 'img/cover_letter.jpg' %}" alt="Photo" class="img-fluid rounded-circle">
-          </div>
-          <div class="col-md-9">
-            <h1>Cover Letter</h1>
-            <p>I am writing to express my interest in the Full Stack Developer position at Code Icons Technology. With my strong
-              background in computer science and experience in web development, I am confident that I would be a
-              valuable asset to your team.</p>
-            <h2>Skills</h2>
-            <ul>
-              <li>2+ years of experience as a python developer</li>
-              <li>Expertise in Django, HTML and CSS</li>
-              <li>Strong problem-solving and communication skills</li>
-            </ul>
+              <div class="cover-letter container mt-5">
+          <!-- ======= Cover Letter Section ======= -->
+          <section id="cover-letter" class="cover-letter-section">
+            <div class="container mt-5">
+              <div class="row align-items-center">
 
-            <div class="ind_project">
-            <h2>Individual Projects</h2>
-            <ul>
-              <li>
-                <strong>Project 1:</strong>
-                Python Blog Website
-              </li>
-              <li>
-                <strong>Project 2:</strong>
-                College management System
-              </li>
-              <li>
-                <strong>Project 3:</strong>
-                E-commerce Website
-              </li>
-              <li>
-                <strong>Project 4:</strong>
-                ChatGPT Clone
-              </li>
-            </ul>
-          </div>
+                <!-- Profile Image -->
+                <div class="col-12 col-md-3 text-center mb-3">
+                  <img src="{% static 'img/cover_letter.jpg' %}"
+                      alt="Cover Letter Image"
+                      class="img-fluid rounded-circle cover-img">
+                </div>
 
-          </div>
+                <!-- Content -->
+                <div class="col-12 col-md-9">
+                  <h1 class="cover-title">Cover Letter</h1>
+
+                  <p class="cover-text">
+                    I am writing to express my interest in the Full Stack Developer position at
+                    Code Icons Technology. With my strong background in computer science and
+                    hands-on experience in web development, I am confident that I would be a
+                    valuable asset to your team.
+                  </p>
+
+                  <h2 class="cover-subtitle">Skills</h2>
+                  <ul class="cover-list">
+                    <li>2+ years of experience as a Python Developer</li>
+                    <li>Expertise in Django, HTML, CSS, and Bootstrap</li>
+                    <li>Strong problem-solving and communication skills</li>
+                  </ul>
+
+                  <div class="ind-project mt-4">
+                    <h2 class="cover-subtitle">Individual Projects</h2>
+                    <ul class="cover-list">
+                      <li><strong>Project 1:</strong> Python Blog Website</li>
+                      <li><strong>Project 2:</strong> College Management System</li>
+                      <li><strong>Project 3:</strong> E-commerce Website</li>
+                      <li><strong>Project 4:</strong> ChatGPT Clone</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ======= End Cover Letter Section ======= -->
 
           <!-- ======= Portfolio Section ======= -->
           <section id="portfolio" class="portfolio section-bg">
@@ -456,53 +460,113 @@
                   I can contribute value to your team and help achieve your business goals.
                   Thank you again for visiting . I am look forward to hearing from you soon.</p>
               </div>
+            <div class="row gy-4" data-aos="fade-in">
 
-              <div class="row" data-aos="fade-in">
-                <div class="col-lg-5 d-flex align-items-stretch">
-                  <div class="info">
-                    <div class="address">
-                      <i class="bi bi-geo-alt"></i>
-                      <h4>Location:</h4>
-                      <p>Pune, Maharastra, India.</p>
-                    </div>
-
-                    <div class="email">
-                      <i class="bi bi-envelope"></i>
-                      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=calciabhiabhang@gmail.com " title="Send Email"></a>                     
-                      <h4>Email:</h4>
-                      <p>calciabhiabhang@gmail.com</p></a>
-                    </div>
-
-                    <div class="phone">
-                      <i class="bi bi-phone"></i>
-                      <h4>Call:</h4>
-                      <p>+91 9146502466</p>
-                    </div>
-
-                    <div class="skype">
-                      <i class="bi bi-skype"></i>
-                      <h4>Skype:</h4>
-                      <p>+91 9146502466</p>
-                    </div>
-
-                    <div class="whatsapp">
-                    <i class="bx bxl-whatsapp"></i>
-                      <a href="https://wa.me/919146502466" title="Chat with whatsapp">
-                      <h4>whatsapp:</h4>
-                      <p>9146502466</p></a>
-                    </div>
-                    
-                    <div class="linkedin">
-                      <i class="bi bi-linkedin"></i>
-                      <h4>linkedin:</h4>
-                      <a href="www.linkedin.com/in/abhi-abhang" target="_blank">Abhishek Abhang</a>
-                    </div>
-                  </div>
+            <!-- Location -->
+            <div class="col-12 col-md-6">
+              <div class="d-flex align-items-start">
+                <div class="bg-primary bg-opacity-10 text-primary rounded-circle 
+                            d-flex align-items-center justify-content-center me-3"
+                    style="width:50px;height:50px;">
+                  <i class="bi bi-geo-alt fs-4"></i>
                 </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Location:</h5>
+                  <p class="mb-0 text-primary">Pune, Maharashtra, India.</p>
+                </div>
+              </div>
             </div>
-          </section><!-- End Contact Section -->
-        </main><!-- End #main -->
-        
+
+            <!-- Email -->
+            <div class="col-12 col-md-6">
+              <div class="d-flex align-items-start">
+                <div class="bg-primary bg-opacity-10 text-primary rounded-circle 
+                            d-flex align-items-center justify-content-center me-3"
+                    style="width:50px;height:50px;">
+                  <i class="bi bi-envelope fs-4"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Email:</h5>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=calciabhiabhang@gmail.com"
+                        target="_blank" class="text-primary text-decoration-none">calciabhiabhang@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="col-12 col-md-6">
+              <div class="d-flex align-items-start">
+                <div class="bg-primary bg-opacity-10 text-primary rounded-circle 
+                            d-flex align-items-center justify-content-center me-3"
+                    style="width:50px;height:50px;">
+                  <i class="bi bi-phone fs-4"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Call:</h5>
+                  <a href="tel:+919146502466"
+                    class="text-primary text-decoration-none">
+                    +91 9146502466
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skype -->
+            <div class="col-12 col-md-6">
+              <div class="d-flex align-items-start">
+                <div class="bg-primary bg-opacity-10 text-primary rounded-circle 
+                            d-flex align-items-center justify-content-center me-3"
+                    style="width:50px;height:50px;">
+                  <i class="bi bi-skype fs-4"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Skype:</h5>
+                  <p class="mb-0 text-primary">+91 9146502466</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="col-12 col-md-6">
+              <div class="d-flex align-items-start">
+                <div class="bg-success bg-opacity-10 text-success rounded-circle 
+                            d-flex align-items-center justify-content-center me-3"
+                    style="width:50px;height:50px;">
+                  <i class="bx bxl-whatsapp fs-4"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">WhatsApp:</h5>
+                  <a href="https://wa.me/919146502466"
+                    class="text-success text-decoration-none"
+                    target="_blank">
+                    9146502466
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="col-12 col-md-6">
+              <div class="d-flex align-items-start">
+                <div class="bg-primary bg-opacity-10 text-primary rounded-circle 
+                            d-flex align-items-center justify-content-center me-3"
+                    style="width:50px;height:50px;">
+                  <i class="bi bi-linkedin fs-4"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">LinkedIn:</h5>
+                  <a href="https://www.linkedin.com/in/abhi-abhang"
+                    class="text-primary text-decoration-none"
+                    target="_blank">
+                    Abhishek Abhang
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+<br/> <br/>
         <footer id="footer">
           <div class="container">
             <div class="copyright">
