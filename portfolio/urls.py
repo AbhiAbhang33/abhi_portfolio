@@ -1,9 +1,6 @@
 from portfolio import views
-from django_distill import distill_path
-from django.conf import settings
-from django.conf.urls.static import static
-
+from django.urls import path
 urlpatterns = [
-    distill_path('', views.get_index, name='home'),
+    path('', views.get_index, name='home'),
 ]
 
